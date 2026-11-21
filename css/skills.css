@@ -1,0 +1,113 @@
+/* Full page formatting */
+/* Declaring one font to be used everywhere, 
+   the background colour and the main text colour 
+   ensuring there is decent visibility of text.
+
+   Grid display defined, using named areas.
+*/
+body {
+    background-color: #0F172A;
+    color: #F4F4F4;
+    font-family: 'Martel Sans';
+    padding: 1em;
+
+    /* Display settings */
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'headerNav headerNav headerNav'
+        'skills skills aside'
+        'achievements achievements .'
+        'footer footer footer';
+    gap: 1rem;
+}
+
+/* All links everywhere to be bold and Neon Cyan */
+a {
+    font-weight: bold;
+    color: #22D3EE;
+}
+
+
+
+/* Header section formatting */
+/* Header and header navigation colours declared.
+   Note - anchor/link colour overrides text colour of header.
+*/
+header {
+    grid-area: header;
+    background-color: #64748B;
+    padding-left: 2em;
+}
+
+#headerNav {
+    grid-area: headerNav;
+    background-color: #64748B;
+    padding-left: 1em;
+}
+
+/* Don't want my name to have an underline */
+header a {
+    text-decoration: none;
+}
+
+/* The list of links in navigation have been made horizontal using flexbox.
+   Bullet point symbols removed.
+   List of links is responsive to screen width reducing (wrap text).
+*/
+#headerNav ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0em;
+    flex-wrap: wrap;
+    margin: 0em;
+}
+
+#headerNav li {
+    padding: 0.5em;
+    font-size: large;
+}
+
+
+
+/* Main content formatting */
+/*  Pushing the content away from the border, more centered. 
+    Signature border applied, consistent to all other areas of other pages.
+*/
+article {
+    border: 0.25em outset #64748B;
+    padding: 1em;
+    padding-top: 0em;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+#achievements {
+    grid-area: achievements;
+}
+
+section {
+    padding-bottom: 1em;
+}
+
+aside {
+    grid-area: aside;
+    border: 0.25em outset #64748B;
+    padding: 1em;
+}
+
+
+
+/* Footer design */
+/* Footer colour declared. Footer content moved to right-hand side of page.
+   Note - anchor/link colour overrides text colour of header.
+*/
+footer {
+    grid-area: footer;
+    background-color: #64748B;
+    color: #22D3EE;
+    padding-right: 1em;
+    text-align: end;
+}

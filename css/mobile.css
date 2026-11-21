@@ -1,0 +1,25 @@
+body, article {
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
+    max-width: 12rem;
+    max-height: 12rem;
+}
+
+figure {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+    padding-bottom: 1em;
+    align-items: center;
+}
+
+section img {
+    max-width: 9em;
+}

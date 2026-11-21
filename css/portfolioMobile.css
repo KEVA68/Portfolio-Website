@@ -1,0 +1,14 @@
+figure img {
+    max-width: 100%;
+    border-radius: 0em;
+}
+
+section {
+    gap: 0em;
+    padding-bottom: 1em;
+    max-height: 100%;
+}
+
+figcaption {
+    padding-left: 0em;
+}
